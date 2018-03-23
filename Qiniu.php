@@ -1,6 +1,6 @@
 <?php
 
-namespace crazyfd\qiniu;
+namespace flash20\qiniu;
 /**
  * upload file to qiniu.
  *
@@ -36,7 +36,7 @@ class Qiniu
      * @param string $bucket
      * @param string $zone 默认华南机房
      */
-    function __construct($accessKey, $secretKey, $domain, $bucket, $zone = 'south_china')
+    public function __construct($accessKey, $secretKey, $domain, $bucket, $zone = 'south_china')
     {
         $this->accessKey = $accessKey;
         $this->secretKey = $secretKey;
