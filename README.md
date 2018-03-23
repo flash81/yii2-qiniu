@@ -1,6 +1,6 @@
 文件上传到七牛
 =================================
-* @author crazyfd <crazyfd@qq.com>
+* @author flash20 <2684498887@qq.com>
 * @version 1.0
 
 file upload for qiniu
@@ -10,7 +10,7 @@ file upload for qiniu
 ```json
 {
   "require": {
-    "crazyfd/yii2-qiniu": "*"
+    "flash20/yii2-qiniu": "*"
   }
 }
 ```
@@ -28,7 +28,7 @@ $sk = 'sss';
 $domain = 'http://demo.domain.com/';
 $bucket = 'demo';
 $zone = 'south_china';
-use crazyfd\qiniu\Qiniu;
+use flash20\qiniu\Qiniu;
 $qiniu = new Qiniu($ak, $sk,$domain, $bucket,$zone);
 $key = time();
 $key .= strtolower(strrchr($_FILES['name'], '.'));
