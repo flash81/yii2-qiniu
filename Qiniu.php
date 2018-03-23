@@ -6,11 +6,11 @@ namespace flash20\qiniu;
  *
  * To use this extension, you may insert the following code in controller:
  *
- * use crazyfd\qiniu\Qiniu;
+ * use flash20\qiniu\Qiniu;
  * $qiniu = new Qiniu($ak, $sk,$domain, $bucket);
  * $qiniu->uploadFile($file['tmp_name'], time());
  *
- * @author crazyfd <crazyfd@qq.com>
+ * @author flash20 <2684498887@qq.com>
  * @version 1.0
  */
 
