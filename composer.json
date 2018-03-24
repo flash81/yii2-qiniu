@@ -1,0 +1,20 @@
+{
+    "name": "flash20/yii2-qiniu",
+    "description": "yii2上传到七牛云存储,修复原来bug",
+	"keywords": ["yii", "qiniu", "upload"],
+	"type": "yii2-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "flash20",
+            "email": "2684498887@qq.com"
+        }
+    ],
+	
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+	"autoload": {
+		"psr-4": { "flash20\\qiniu\\": "" }
+	}
+}
