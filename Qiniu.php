@@ -22,10 +22,10 @@ class Qiniu
     public $rs_host = 'http://rs.qbox.me';    //资源管理域名
     public $rsf_host = 'http://rsf.qbox.me';   //资源列举域名
 
-    protected $accessKey;
-    protected $secretKey;
-    protected $bucket;
-    protected $domain;
+    public $accessKey;
+    public $secretKey;
+    public $bucket;
+    public $domain;
 
 
     /**
