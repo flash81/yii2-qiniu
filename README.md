@@ -5,7 +5,6 @@
 
 file upload for qiniu
 
-最近会调整版本
 
 ```json
 {
