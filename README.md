@@ -21,18 +21,16 @@ composer install
 Usage
 -----
 
-```php
+```main.php
 <?php
-$ak = 'sss';
-$sk = 'sss';
-$domain = 'http://demo.domain.com/';
-$bucket = 'demo';
-$zone = 'south_china';
-use flash20\qiniu\Qiniu;
-$qiniu = new Qiniu($ak, $sk,$domain, $bucket,$zone);
-$key = time();
-$key .= strtolower(strrchr($_FILES['name'], '.'));
-
-$qiniu->uploadFile($_FILES['tmp_name'],$key);
-$url = $qiniu->getLink($key);
+        'qiniu'=> [
+            'class' => 'flash20\qiniu\Qiniu',
+            'accessKey' => 'xxx',
+            'secretKey' => 'xxx',
+            'domain' => 'http://xxx',
+            'bucket' => 'xxx',
+        ],
+```
+```code
+Yii::$app->qiniu->uploadFile($file,time());
 ```
